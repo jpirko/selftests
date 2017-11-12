@@ -1,0 +1,9 @@
+#!/bin/bash
+# Topology description. p1 looped back to p2, p3 to p4 and so on.
+
+declare -A netifs
+
+netifs[p1]=veth0
+netifs[p2]=veth1
+netifs[p3]=veth2
+netifs[p4]=veth3
