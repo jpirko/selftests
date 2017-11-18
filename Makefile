@@ -1,5 +1,5 @@
 TEST_PROGS := 001-bridge-simple.sh 002-router-simple.sh 003-vrf-simple.sh
-TEST_PROGS += 004-bridge-learn.sh
+TEST_PROGS += 004-bridge-learn.sh 005-bridge-flood.sh
 
 .ONESHELL:
 define RUN_TESTS
