@@ -1,6 +1,6 @@
 TEST_PROGS := 001-bridge-simple.sh 002-router-simple.sh 003-vrf-simple.sh
 TEST_PROGS += 004-bridge-learn.sh 005-bridge-flood.sh
-TEST_PROGS += 006-fib-netdev-unregister.sh
+TEST_PROGS += 006-fib-netdev-unregister.sh 007-fib-netdev-down.sh
 
 .ONESHELL:
 define RUN_TESTS
