@@ -10,8 +10,8 @@ if [ ! -f topo.sh ]; then
 	exit 0
 fi
 
-source topo.sh
 source lib.sh
+source topo.sh
 
 num_netifs=4
 topo_check $num_netifs
