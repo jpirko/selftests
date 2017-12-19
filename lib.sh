@@ -13,6 +13,19 @@ topo_check()
 	return 0
 }
 
+tc_offload_check()
+{
+	for i in $(eval echo {1..$1})
+	do
+		ethtool -k ${netifs[p$i]} |grep "hw-tc-offload: on" &> /dev/null
+		if [ $? -ne 0 ]; then
+			return 1
+		fi
+	done
+
+	return 0
+}
+
 setup_wait()
 {
 	for i in $(eval echo {1..$1})
