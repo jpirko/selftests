@@ -26,6 +26,11 @@ tc_offload_check()
 	return 0
 }
 
+mac_get()
+{
+	echo `ip -j l show $1 | jq -r '.[0] | .address'`
+}
+
 setup_wait()
 {
 	for i in $(eval echo {1..$1})
